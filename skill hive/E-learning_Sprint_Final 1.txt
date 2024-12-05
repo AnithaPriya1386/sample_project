@@ -1,0 +1,90 @@
+1. Authentication and Registration Module:
+
+- Admin: 
+         Create and view instructor profiles.	
+         While page loads(ngOnInit), all the registered candidates must get displayed in the table format with total count of candidates.
+       
+All Roles: 
+        Credentials are verified against the database from within Login page(UI).
+	Role-based redirection to the corresponding dashboard.
+	Password reset and recovery workflow for all roles (Admin, Instructor, Candidate).
+        Secure logout	
+        Error handling for invalid credentials and unauthorized access.
+
+Sprint 1 - UI for registration/login
+           Credentials verification(If emailId and password matches with DB) within Login page(For admin, instructor, and candidate);
+Sprint 2 - Role-based redirection to the corresponding dashboard[For admin(show all candidates), instructor, and candidate]; Secure logout and validations.
+Sprint 3 - Password reset, error handling(If emailId and password doesn't match with DB data).
+Sprint 4 - Integration
+
+
+2. Course Module:
+- Admin: Create, Update, Delete, Filter by Instructor, Filter by technology, and Filter by Status
+- Candidate: View all courses, View enrolled course(s) in detail
+- Instructor: View assigned courses
+
+Sprint 1 - Create
+Sprint 2 - Update, delete
+Sprint 3 - Filter courses by technology, technology and status(Can be viewed by candidate, admin, and instructor); 
+           View enrolled courses in detail(Can be viewed by candidate)
+Sprint 4 - Integration
+
+
+3. Instructor Module: 
+- Admin: Create, Update, Delete, View all instructors, Filter instructors by technology, and Filter instructors by Rating
+- Candidate: View instructor profile for enrolled courses
+- Instructor: View assigned courses, View all instructors, View instructors by technology
+
+Sprint 1 - Create
+Sprint 2 - Update, delete
+Sprint 3 - View all instructors(Can be viewed by Admin and Instructor); 
+           Filter instructors by assigned course(Can be viewed by instructor); 
+           Filter instructors by technology, and rating(Can be viewed by admin, and instructor); 
+           Filter instructor of enrolled course
+Sprint 4 - Integration
+
+4. Candidate Module:
+- Admin: View all candidates, Filter candidate by course, Filter candidate by technology, Deletion
+- Candidate: Register and Self enroll, Update profile(SIGN UP),  
+             Form validations for registration(e.g., email, contact number, password strength) to prevent duplicate registration.
+- Instructor: View all candidates of enrolled course(s)
+
+- Candidate:
+         Candidate self-registration with a user-friendly form.(SIGN UP)
+
+Sprint 1 - Create with form validations
+Sprint 2 - Update, delete
+Sprint 3 - View all candidates, Filter candidate(s) by course and technology(Can be viewed by Admin); 
+           Filter candidates by enrolled course(s)(Can be viewed by admin, instructor); 
+Sprint 4 - Integration
+
+5. Assessment and Grading Module: 
+- Admin: Schedule assessment
+- Candidate: Attempt MCQ, View Score on Submission
+- Instructor: Create MCQ, Update MCQ, Delete MCQ, Add Instruction, Update Instructions, View Candidate Score
+
+JSON- array of objects (question name, options, correct answer)
+
+Sprint 1 - Schedule assessment(For each course, assessment date must be scheduled)
+Sprint 2 - Prepare data for MCQs along with instructions and display the same in the UI page; Score calculation for MCQs
+Sprint 3 - View candidate score
+Sprint 4 - Integration
+
+6. Helpdesk Module: 
+- Admin: View all tickets, View tickets by status, View tickets by course
+- Candidate: Create ticket, View tickets by status, 
+             View all raised tickets with replies
+- Instructor: Responding to tickets
+
+Sprint 1 - Create
+Sprint 2 - Update(responding to tickets)
+Sprint 3 - View all tickets; 
+           Filtering tickets by status, course(Can be viewed by admin, candidate);
+           Viewing all raised tickets(Can be viewed by candidate)
+Sprint 4 - Integration
+
+
+
+
+
+
